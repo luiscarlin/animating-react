@@ -46,7 +46,8 @@
 
 import { Routes, Route, Link } from "react-router-dom";
 import "./App.css";
-import Home from "./Home";
+import DragDropResizeZoom from "./pages/DragDropResizeZoom";
+import Home from "./pages/Home";
 
 function App() {
   return (
@@ -54,6 +55,7 @@ function App() {
       <h1>Welcome to React Router!</h1>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/drag-drop-resize-zoom" element={<DragDropResizeZoom />} />
       </Routes>
     </div>
   );
