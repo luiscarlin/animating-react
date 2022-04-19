@@ -46,8 +46,9 @@
 
 import { Routes, Route, Link } from "react-router-dom";
 import "./App.css";
-import DragDropResizeZoom from "./pages/DragDropResizeZoom";
 import Home from "./pages/Home";
+import Card from "./pages/react-spring/Card";
+import PersonalCard from "./pages/personal/Card";
 
 function App() {
   return (
@@ -55,7 +56,8 @@ function App() {
       <h1>Welcome to React Router!</h1>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/drag-drop-resize-zoom" element={<DragDropResizeZoom />} />
+        <Route path="/react-spring/card" element={<Card />} />
+        <Route path="/personal/card" element={<PersonalCard />} />
       </Routes>
     </div>
   );
